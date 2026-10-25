@@ -1,12 +1,11 @@
 name: Post reel
 
-# Runs at 16:00 and 17:00 UTC: one of them is 18:00 in Bratislava (summer or
-# winter time). post.py posts only when a reel is due today and it's 18:00 or
-# later there, and records it, so the second run does nothing.
+# Posts go out at 04:00 and 16:00 Bratislava time. These runs cover both
+# winter (UTC+1) and summer (UTC+2) time; post.py posts only what is due by
+# schedule.json's "at" times and records it, so the extra runs do nothing.
 on:
   schedule:
-    - cron: '0 16 * * *'
-    - cron: '0 17 * * *'
+    - cron: '0 2,3,14,15 * * *'
   workflow_dispatch:
     inputs:
       reel:

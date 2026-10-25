@@ -3,7 +3,7 @@
 Reels for [Triptych](https://greenybeany.dev/triptych/)'s Instagram, and the workflow that posts them.
 
 - `reels/`: one `.mp4`, a `.jpg` cover and a `.txt` caption per reel. GitHub Pages serves them, so Instagram can fetch them.
-- `schedule.json`: which reel goes out on which date, at 18:00 Bratislava time. `posted` is filled in after a reel goes out.
+- `schedule.json`: when each reel goes out (`at`, Bratislava time; every 12 hours, at 04:00 and 16:00). `posted` is filled in after a reel goes out.
 - `.github/workflows/post.yml`: runs every day. If a reel is due, it posts it through Instagram's official API (`post.py`).
 
 ## Secrets (Settings → Secrets and variables → Actions)
@@ -13,7 +13,7 @@ Reels for [Triptych](https://greenybeany.dev/triptych/)'s Instagram, and the wor
 
 ## Adding a reel
 
-Put `NN-name.mp4`, `.jpg` and `.txt` in `reels/`, add `{"id": "NN-name", "date": "YYYY-MM-DD"}` to `schedule.json`, and push.
+Put `NN-name.mp4`, `.jpg` and `.txt` in `reels/`, add `{"id": "NN-name", "at": "YYYY-MM-DDTHH:MM"}` to `schedule.json`, and push.
 
 ## Testing
 

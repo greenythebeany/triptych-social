@@ -76,8 +76,11 @@ def main():
     if force:
         due = [p for p in sched['posts'] if p['id'] == force]
     else:
-        due = [p for p in sched['posts'] if not p.get('posted') and p['date'] == now.date().isoformat()
-               and now.hour >= sched.get('hour', 18)]
+        # each post has a local time ("at"); post the earliest one that is due,
+        # but not one that is more than 6 hours late (a missed slot is skipped)
+        due = sorted((p for p in sched['posts'] if not p.get('posted')
+                      and now - timedelta(hours=6) <= datetime.fromisoformat(p['at']).replace(tzinfo=TZ) <= now),
+                     key=lambda p: p['at'])
     refresh_token(sched)
     if not due:
         print(f'nothing due at {now:%Y-%m-%d %H:%M} ({TZ.key})')
