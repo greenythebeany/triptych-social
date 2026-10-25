@@ -1,0 +1,7 @@
+stop scrolling and play your own music 🎧
+
+Triptych is a free music player for your own Jellyfin server: three looks, synced lyrics, your own Wrapped, and a cat that jams along.
+
+Free and open source. Link in bio.
+
+#jellyfin #selfhosted #musicplayer #opensource #homelab #flac #musicapp #nothingphone
