@@ -50,7 +50,15 @@ def refresh_token(state):
     if not os.environ.get('GH_PAT'):
         print('token refresh skipped: no GH_PAT secret to save the new token with')
         return
-    data = call('GET', 'https://graph.instagram.com/refresh_access_token', grant_type='ig_refresh_token')
+    # Instagram only renews tokens that are at least 24 hours old; a refusal
+    # here is not worth failing the post over, the next run tries again.
+    try:
+        q = urllib.parse.urlencode({'grant_type': 'ig_refresh_token', 'access_token': TOKEN})
+        with urllib.request.urlopen(f'https://graph.instagram.com/refresh_access_token?{q}', timeout=60) as r:
+            data = json.load(r)
+    except urllib.error.HTTPError as e:
+        print(f'token refresh skipped ({e.code}): {e.read().decode(errors="replace")[:200]}')
+        return
     new = data.get('access_token')
     if not new:
         print('token refresh: no token returned'); return
