@@ -1,0 +1,5 @@
+A real queue: songs you add play in order, before the rest of the album. Drag to reorder, swipe to remove.
+
+Free and open source for Windows, Linux, Android and iPhone. Link in bio.
+
+#jellyfin #selfhosted #musicplayer #opensource #homelab #flac #musicapp #nothingphone

@@ -1,0 +1,5 @@
+Synced lyrics, line by line, in all three looks. Triptych finds them on lrclib.net, your own Jellyfin server or lyrics.ovh.
+
+Free and open source for Windows, Linux, Android and iPhone. Link in bio.
+
+#jellyfin #selfhosted #musicplayer #opensource #homelab #flac #musicapp #nothingphone

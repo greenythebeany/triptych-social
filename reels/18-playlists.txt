@@ -1,0 +1,5 @@
+Playlists, liked songs, albums and artists come straight from your Jellyfin server, so they are the same on your PC and your phone.
+
+Free and open source for Windows, Linux, Android and iPhone. Link in bio.
+
+#jellyfin #selfhosted #musicplayer #opensource #homelab #flac #musicapp #nothingphone

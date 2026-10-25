@@ -1,0 +1,5 @@
+No ads, no analytics, no account with us. Your library and listening history stay on your device and your Jellyfin server; the optional lookups (album art, lyrics, update checks) can each be turned off.
+
+Free and open source for Windows, Linux, Android and iPhone. Link in bio.
+
+#jellyfin #selfhosted #musicplayer #opensource #homelab #flac #musicapp #nothingphone

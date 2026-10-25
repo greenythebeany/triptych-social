@@ -1,0 +1,5 @@
+A five-band equalizer with presets on desktop and Android, plus a loudness boost on Android.
+
+Free and open source for Windows, Linux, Android and iPhone. Link in bio.
+
+#jellyfin #selfhosted #musicplayer #opensource #homelab #flac #musicapp #nothingphone

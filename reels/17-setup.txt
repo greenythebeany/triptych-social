@@ -1,0 +1,5 @@
+Step 1: put your music on a Jellyfin server (free). Step 2: install Triptych. Step 3: sign in with your server address. That is it.
+
+Free and open source for Windows, Linux, Android and iPhone. Link in bio.
+
+#jellyfin #selfhosted #musicplayer #opensource #homelab #flac #musicapp #nothingphone

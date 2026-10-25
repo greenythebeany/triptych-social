@@ -1,0 +1,5 @@
+Volume normalization evens out loud and quiet songs with the ReplayGain data your Jellyfin server already has.
+
+Free and open source for Windows, Linux, Android and iPhone. Link in bio.
+
+#jellyfin #selfhosted #musicplayer #opensource #homelab #flac #musicapp #nothingphone
