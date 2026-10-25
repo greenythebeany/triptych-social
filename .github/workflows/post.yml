@@ -1,11 +1,12 @@
 name: Post reel
 
-# Posts go out at 04:00 and 16:00 Bratislava time. These runs cover both
-# winter (UTC+1) and summer (UTC+2) time; post.py posts only what is due by
-# schedule.json's "at" times and records it, so the extra runs do nothing.
+# Posts go out at 04:00 and 16:00 Bratislava time. GitHub delays or drops
+# scheduled runs, most often on the hour, so this checks every hour at :17;
+# post.py posts only what is due by schedule.json's "at" times (up to 6 hours
+# late) and records it, so the other runs do nothing.
 on:
   schedule:
-    - cron: '0 2,3,14,15 * * *'
+    - cron: '17 * * * *'
   workflow_dispatch:
     inputs:
       reel:
