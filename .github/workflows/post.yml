@@ -1,0 +1,48 @@
+name: Post reel
+
+# Runs at 16:00 and 17:00 UTC: one of them is 18:00 in Bratislava (summer or
+# winter time). post.py posts only when a reel is due today and it's 18:00 or
+# later there, and records it, so the second run does nothing.
+on:
+  schedule:
+    - cron: '0 16 * * *'
+    - cron: '0 17 * * *'
+  workflow_dispatch:
+    inputs:
+      reel:
+        description: 'Post this reel now (e.g. 01-looks); empty = whatever is due'
+        required: false
+      dry_run:
+        description: 'Check everything but post nothing'
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: post-reel
+  cancel-in-progress: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Post the reel that is due
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          GH_PAT: ${{ secrets.GH_PAT }}
+          GH_REPO: ${{ github.repository }}
+          FORCE_ID: ${{ inputs.reel }}
+          DRY_RUN: ${{ inputs.dry_run && '1' || '0' }}
+        run: python post.py
+      - name: Record it
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add schedule.json
+          git diff --cached --quiet || (git commit -m "Posted / token refreshed" && git push)

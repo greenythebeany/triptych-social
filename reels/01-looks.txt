@@ -1,0 +1,5 @@
+One library, three looks: Nothing, Spotify or Apple Music style. Same songs, same playlists, one tap in Settings to switch.
+
+Triptych is a free, open-source music player for your own Jellyfin server. Link in bio.
+
+#jellyfin #selfhosted #musicplayer #opensource #homelab #flac #musicapp #nothingphone

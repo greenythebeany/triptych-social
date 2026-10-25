@@ -1,0 +1,5 @@
+Your own Spotify Wrapped, for the music you actually own. Every New Year's Eve, Triptych turns your listening into a story: minutes, top songs, top artist and your biggest month, all from your own Jellyfin server.
+
+Free and open source. Link in bio.
+
+#jellyfin #selfhosted #musicplayer #opensource #homelab #flac #musicapp #nothingphone
