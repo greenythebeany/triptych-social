@@ -1,0 +1,7 @@
+One Jellyfin server at home. Triptych on Windows, Mac and Android. 🖥️📱
+
+Same albums, same playlists, everywhere.
+
+Triptych: a free, open-source music player for your own Jellyfin server. Link in bio 🎧
+
+#selfhosted #jellyfin #homelab #homeserver #musicplayer #opensource #triptych #claudecode

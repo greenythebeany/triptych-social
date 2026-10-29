@@ -1,0 +1,10 @@
+Self-host your music in 3 steps:
+1. Install Jellyfin
+2. Point it at your music folder
+3. Open Triptych and sign in
+
+Your own streaming service. 🏠
+
+Triptych: a free, open-source music player for your own Jellyfin server. Link in bio 🎧
+
+#selfhosted #jellyfin #homelab #homeserver #musicplayer #opensource #triptych #claudecode
