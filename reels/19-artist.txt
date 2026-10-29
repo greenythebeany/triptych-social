@@ -1,5 +1,0 @@
-Artist pages with photos and backdrops from your own server, big artwork everywhere, and a player made for listening.
-
-Free and open source for Windows, Linux, Android and iPhone. Link in bio.
-
-#jellyfin #selfhosted #musicplayer #opensource #homelab #flac #musicapp #nothingphone

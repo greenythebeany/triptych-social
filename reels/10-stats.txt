@@ -1,5 +1,0 @@
-Stats counts real listening time, plays and artists across all your devices, with a calendar that fills in day by day. And at New Year, it all turns into your Wrapped.
-
-Free and open source for Windows, Linux, Android and iPhone. Link in bio.
-
-#jellyfin #selfhosted #musicplayer #opensource #homelab #flac #musicapp #nothingphone

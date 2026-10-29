@@ -1,5 +1,0 @@
-The Apple Music look: frosted glass, bare rounded artwork and slim pill sliders, playing the music on your own server.
-
-Free and open source for Windows, Linux, Android and iPhone. Link in bio.
-
-#jellyfin #selfhosted #musicplayer #opensource #homelab #flac #musicapp #nothingphone
